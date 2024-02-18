@@ -84,7 +84,8 @@
             class="text-[#1DD100]"> P Paribahan</span></h1>
         <p class="my-4 text-[#ffffff]">Yes, you can run unit tests and view the results directly within the app. The
           integrated testing features allow for a streamlined .</p>
-        <button class="btn bg-[#1DD100] text-xl font-bold">Buy Tickets</button>
+        <!-- <button class="btn bg-[#1DD100] text-xl font-bold">Buy Tickets</button> -->
+        <a href="#choose" class="btn bg-[#1DD100] text-xl font-bold">Buy Tickets</a>
       </div>
     </div>
   </div>
@@ -101,7 +102,7 @@
           </div>
           <div class="divider lg:divider-horizontal"></div>
           <div class="p-12">
-            <h1 class="text-3xl font-bold text-[#030712] mb-2 mt-8">NEW15</h1>
+            <h1 id="fifteen" class="text-3xl font-bold text-[#030712] mb-2 mt-8">NEW15</h1>
             <p class="text-xl text-[#03071266]">Coupon Code</p>
           </div>
         </div>
@@ -113,7 +114,7 @@
           </div>
           <div class="divider lg:divider-horizontal"></div>
           <div class="p-14">
-            <h1 class="text-3xl font-bold text-[#030712] mb-2 mt-8">Couple 20</h1>
+            <h1 id="twenty" class="text-3xl font-bold text-[#030712] mb-2 mt-8">Couple 20</h1>
             <p class="text-xl text-[#03071266]">Coupon Code</p>
           </div>
         </div>
@@ -143,7 +144,7 @@
               </div>
               <div class="flex bg-[#1DD10026] w-[180px] items-center justify-center gap-2 rounded-xl">
                 <img src="images/seat-green.png" alt="">
-                <h1 class="text-lg font-medium text-[#1DD100]"><span>40</span> Seats left</h1>
+                <h1 class="text-lg font-medium text-[#1DD100]"><span id="seat-left">12</span> Seats left</h1>
               </div>
             </div>
             <!-- body -->
@@ -169,12 +170,12 @@
           <!-- Right part -->
           <div class="pl-20 mr-16">
             <img src="images/fare.png" alt="">
-            <h1 class="text-3xl text-[#030712] font-bold"><span>550</span> Taka</h1>
+            <h1 class="text-3xl text-[#030712] font-bold"><span id="amount">550</span> Taka</h1>
             <p class="text-2xl text-[#03071299] font-semibold">Per Seat</p>
           </div>
         </section>
         <!-- second section -->
-        <section class="bg-[#FFFFFF] rounded-2xl flex">
+        <section id="choose" class="bg-[#FFFFFF] rounded-2xl flex">
           <!-- left side -->
           <div class="w-3/5 p-8">
             <h2>Select Your Seat</h2>
@@ -199,35 +200,36 @@
               <div class="flex justify-around items-center gap-16 my-1 mb-6">
                 <div class="flex gap-9">
                   <div class="text-center py-3">A</div>
-                  <div id="A1" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">A1</div>
-                  <div id="A2" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">A2</div>
+                  <!-- <div id="A1" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">A1</div> -->
+                  <button id="A1" class="btn bg-[#F7F8F8] px-12 py-3 rounded-xl text-center add-btn">A1</button>
+                  <button id="A2" class="btn bg-[#F7F8F8] px-12 py-3 rounded-xl text-center add-btn">A2</button>
                 </div>
                 <div class="flex gap-9">
-                  <div id="A3" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">A3</div>
-                  <div id="A4" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">A4</div>
+                  <button id="A3" class="btn bg-[#F7F8F8] px-12 py-3 rounded-xl text-center add-btn">A3</button>
+                  <button id="A4" class="btn bg-[#F7F8F8] px-12 py-3 rounded-xl text-center add-btn">A4</button>
                 </div>
                  </div>
             <!-- second row -->
               <div class="flex justify-around items-center gap-16 my-1 mb-6">
                 <div class="flex gap-9">
                   <div class="text-center py-3">B</div>
-                  <div id="B1" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">B1</div>
-                  <div id="B2" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">B2</div>
+                  <button id="B1" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center btn add-btn">B1</button>
+                  <button id="B2" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center btn add-btn">B2</button>
                 </div>
                 <div class="flex gap-9">
-                  <div id="B3" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">B3</div>
-                  <div id="B4" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">B4</div>
+                  <button id="B3" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center btn add-btn">B3</button>
+                  <button id="B4" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center btn add-btn">B4</button>
                 </div>
               </div>
               <div class="flex justify-around items-center gap-16 my-1">
                 <div class="flex gap-9">
                   <div class="text-center py-3">C</div>
-                  <div id="C1" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">C1</div>
-                  <div id="C2" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">C2</div>
+                  <button id="C1" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center btn add-btn">C1</button>
+                  <button id="C2" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center btn add-btn">C2</button>
                 </div>
                 <div class="flex gap-9">
-                  <div id="C3" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">C3</div>
-                  <div id="C4" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center">C4</div>
+                  <button id="C3" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center btn add-btn">C3</button>
+                  <button id="C4" class="bg-[#F7F8F8] px-12 py-3 rounded-xl text-center btn add-btn">C4</button>
                 </div>
               </div>
             </div>
@@ -239,28 +241,28 @@
             <!-- price -->
             <div class="w-[433px] p-8 bg-[#F7F8F8] rounded-xl mb-4">
             <div class="grid grid-cols-3">
-              <h1 class="text-[#030712] font-semibold">Seat<span class="bg-[#1DD100] text-white px-2 rounded-lg">0</span></h1>
+              <h1 class="text-[#030712] font-semibold">Seat<span id="selected-seat" class="bg-[#1DD100] text-white px-2 rounded-lg">0</span></h1>
               <h1 class="text-[#030712] font-semibold">Class</h1>
               <h1 class="text-[#030712] font-semibold">Price</h1>
             </div>
             <hr class="my-2">
-            <div class="grid grid-cols-3">
-               <h1 class="text-[#03071299]">C2</h1>
-               <h2 class="text-[#03071299]">Ecomomy</h2>
-               <h1 class="text-[#03071299]">550</h1>
+            <div id="seat-container" class="grid grid-cols-3">
+               <!-- <h1 id="name" class="text-[#03071299]">C2</h1>
+               <h2 id="type" class="text-[#03071299]">Ecomomy</h2>
+               <h1 id="price" class="text-[#03071299]">0</h1> -->
             </div>
             <hr class="my-2">
             <div class="flex mb-4">
                <h1 class="flex-1 font-semibold text-[#030712]">Total Price</h1>
-               <h1 class="flex-1 ml-32 font-semibold text-[#030712]">BDT <span>1100</span></h1>
+               <h1 class="flex-1 ml-32 font-semibold text-[#030712]">BDT <span id="total-price">0</span></h1>
             </div>
             <form action="" class="mb-4">
-              <input type="text" placeholder="Have any copupon?" class="py-3 px-6 mx-3 rounded-xl">
-              <button class="btn bg-[#1DD100] text-white rounded-xl">Apply</button>
+              <input id="coupon" type="text" placeholder="Have any coupon?" class="py-3 px-6 mx-3 rounded-xl">
+              <button id="apply" class="btn bg-[#1DD100] text-white rounded-xl">Apply</button>
             </form>
             <div class="flex mb-4">
               <h1 class="flex-1 font-semibold text-[#030712]">Grand Total</h1>
-              <h1 class="flex-1 ml-32 font-semibold text-[#030712]">BDT <span>1100</span></h1>
+              <h1 class="flex-1 ml-32 font-semibold text-[#030712]">BDT <span id="grand-total">0</span></h1>
            </div>
           </div>
               <!-- form -->
@@ -271,7 +273,7 @@
                 <input type="number" name="" id="" placeholder="Enter your phone number" class="py-4 border min-w-full px-3 mb-5 rounded-xl">
                 <h1 class="font-bold text-[#030712] mb-3">Email ID</h1>
                 <input type="email" name="" id="" placeholder="Enter your email id" class="py-4 border min-w-full px-3 mb-5 rounded-xl ">
-                <button class="btn min-w-full bg-[#1DD100] py-5 text-white">Next</button>
+                <button id="next" onclick="my_modal_3.showModal()" class="btn min-w-full bg-[#1DD100] py-5 text-white pointer-events-none">Next</button>
               </form>
               <div class="flex justify-between mb-2">
                 <p>Terms and Conditions</p>
@@ -287,7 +289,7 @@
     </section>
     <!-- Paribahn section end -->
     <!-- confirm section -->
-    <section class="container mx-auto px-4 my-5 lg:my-10 flex items-center justify-center hidden">
+    <!-- <section class="container mx-auto px-4 my-5 lg:my-10 flex items-center justify-center hidden">
       <div class="bg-[#ffffff] flex flex-col justify-center items-center gap-5 border w-[718px] py-5">
         <img src="images/success.png" alt="">
         <h1 class="text-2xl font-bold text-[#27AE60]">SUCCESS</h1>
@@ -299,7 +301,26 @@
 
 
       </div>
+    </section> -->
+    <!-- duplicate -->
+    <!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+  <dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <section class="container mx-auto px-4 my-5 lg:my-10 flex items-center justify-center">
+      <div class="bg-[#ffffff] flex flex-col justify-center items-center gap-5 border w-[718px] py-5">
+        <img src="images/success.png" alt="">
+        <h1 class="text-2xl font-bold text-[#27AE60]">SUCCESS</h1>
+        <p class="text-xl font-medium text-[#4A4A4A]">Thank you for Booking Our Bus Seats.</p>
+        <p class="text-xl font-medium text-[#4A4A4A]">We are working hard to find the best service and deals for you.
+        </p>
+        <p class="text-xl font-light text-[#4A4A4A]">Shortly you will find a confirmation in your email.</p>
+        <form method="dialog">
+        <button class="btn text-white bg-[#27AE60] px-16 rounded-full">Continue</button>
+      </form>
+      </div>
     </section>
+  </div>
+</dialog>
 
   </main>
   <footer class=" flex flex-col lg:flex-row gap-9 lg:gap-1 p-10 bg-[#030712] text-neutral-content py-32">
@@ -326,6 +347,7 @@
       </div>
     </nav>
   </footer>
+  <script src="js/ticket.js"></script>
 </body>
 
 </html>
