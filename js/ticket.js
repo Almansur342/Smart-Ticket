@@ -118,3 +118,7 @@ function setTotalPrice(elementId){
 //  const apply = document.getElementById('apply');
 //  apply.classList.remove('pointer-events-none');
 //  }
+
+function refresh(){
+  window.location.reload();
+}
