@@ -80,7 +80,7 @@ function setTotalPrice(elementId){
     const grandTotalInput = document.getElementById('grand-total');
     const grandTotalText = grandTotalInput.innerText;
     // const grandTotalNumber= parseInt(grandTotalText);
-    if(coupon == discount){
+    if(coupon == discount){ 
       const discountAmount = elementId * 0.15;
       const grandTotal = elementId - discountAmount;
       grandTotalInput.innerText = grandTotal;
@@ -114,3 +114,7 @@ function setTotalPrice(elementId){
   const element = document.getElementById(elementId);
   element.classList.add('pointer-events-none');
  }
+//  function handleApply(){
+//  const apply = document.getElementById('apply');
+//  apply.classList.remove('pointer-events-none');
+//  }
