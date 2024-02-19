@@ -3,6 +3,7 @@ for(const btn of allBtn){
   btn.addEventListener('click', function(){
    const seat = btn.innerHTML;
    addColor(seat);
+   disableClickedButton(seat);
    selectedSeat();
    showSelection(seat);
    seatLeft();
@@ -59,8 +60,8 @@ function setTotalPrice(elementId){
   const newPrice = elementNumber + elementId;
   element.innerText = newPrice;
   grandTotalPrice.innerText = newPrice;
-  
   grandTotal(newPrice);
+  disableBtn(newPrice);
 }
 
  function grandTotal(elementId){
@@ -92,7 +93,6 @@ function setTotalPrice(elementId){
       element.classList.add('hidden');
       document.getElementById('apply').classList.add('hidden');
     }
-    
    })
  }
 
@@ -102,3 +102,15 @@ function setTotalPrice(elementId){
   next.classList.remove('pointer-events-none');
  }
  
+ function disableBtn(elementId){
+ const elements = document.getElementsByClassName('add-btn');
+ for(const element of elements){
+  if(elementId == 2200){
+     element.classList.add('pointer-events-none');
+  }
+ }
+ }
+ function disableClickedButton(elementId){
+  const element = document.getElementById(elementId);
+  element.classList.add('pointer-events-none');
+ }
